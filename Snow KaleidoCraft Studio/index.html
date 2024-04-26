@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+      html,body{
+        margin: 0;
+        padding-left: 100px;
+        padding-top: 0px;
+        background-color: #03011f;
+      }
+      .container {
+          position: relative;
+          width: 100%;
+          max-width: 400px;
+          height: 100%;
+        }
+
+      .container .btn {
+        position: absolute;
+        font-family: monospace;
+        top: 300px;
+        left: 700px;
+        transform: translate(-50%, -50%);
+       -ms-transform: translate(-50%, -50%);
+        background-color: #f1f1f1;
+        color: black;
+        font-size: 16px;
+        border: none;
+        position: fixed;
+        cursor: pointer;
+        text-align: center;
+        display: inline-block;
+        outline: 0;
+        border: 0;
+        cursor: pointer;
+        will-change: box-shadow,transform;
+        background-image: linear-gradient(to right, #fc00ff 0%, #00dbde  51%, #fc00ff  100%);
+        margin: 10px;
+        padding: 15px 45px;
+        text-align: center;
+        text-transform: uppercase;
+        transition: 0.5s;
+        background-size: 200% auto;
+        color: white;            
+        box-shadow: 0 0 20px #eee;
+        border-radius: 10px;
+        display: block;
+        box-shadow: 0px 2px 4px rgb(45 35 66 / 40%), 0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px rgb(58 65 111 / 50%);
+        padding: 0 12px;
+        border-radius: 9px;
+        color: #fff;
+        height: 98px;
+        width: 200px;
+        font-size: 18px;
+        text-shadow: 0 1px 0 rgb(0 0 0 / 40%);
+        transition: box-shadow 0.15s ease,transform 0.15s ease;
+        opacity:80%;
+        :hover {
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+            }
+        :active{
+            box-shadow: inset 0px 3px 7px #3c4fe0;
+                    transform: translateY(2px);
+            }
+                        
+       }
+
+      .container .btn:hover {
+        background-color: black;
+        color: white;
+       }
+       #snowflake{
+        font-size:24px;
+       }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Snow KaleidoCraft Studio</title>
+</head>
+<body style="margin: 0">
+    <div class="container">
+      <script src="./p5.js"></script>
+      <script src="./script.js"></script>
+      <script src="./snowflake.js"></script>
+
+      <script>
+
+        var capturer = new CCapture ({
+            format: 'webm',
+            verbose: true
+        })
+
+      </script>
+      <button class="btn" onclick="window.location.href = './Kaleidoscope_Snowflake/index1.html';">Let's make it happen </button>
+    </div>
+    
+
+</body>
+</html>
